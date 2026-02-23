@@ -16,6 +16,17 @@
     
     <body>
 
+        <nav id="desk-nav">
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#techstack">Tech Stack</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+
         <section id="home">
             <div class="home-container">
                 <hr>
@@ -28,13 +39,17 @@
                 <hr>
             </div>
             <div class="home-csv">
-                <button class="cv-download-button">
+                <button class="cv-download-button" onclick="window.open('./files/resume.pdf')"  >
                     Download CV                    
                 </button>
             </div>
             <div class="home-socials">
-                <img src="assets/linkedin.png" alt="" class="home-icon gray-img">
-                <img src="assets/github.png" alt="" class="home-icon gray-img">
+                <img src="assets/linkedin.png" alt="LinkedIn" title="LinkedIn Profile"  class="home-icon gray-img"
+                    onclick="location.href='https://www.linkedin.com/in/francisnealaltares'" />
+                <img src="assets/github.png" alt="Github" title="Github Repo"  class="home-icon gray-img"
+                    onclick="location.href='https://github.com/FNeal10'" />
+                <img src="assets/dp900.png" alt="DP900 Badge" title="Microsoft Certified: Azure Data Fundamentals (DP-900)"  
+                    class="home-icon gray-img" onclick="location.href='https://learn.microsoft.com/en-us/users/neal-5211/credentials/6d4a298a4b0f7e0a'">
             </div>      
             <div class="home-scrolldown">
                 <span class="material-icons home-scroll-arrow">
@@ -79,8 +94,13 @@
                         <div class="timeline-description">
                             <p><i>Lambton College in Toronto</i></p>
                             <br>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut architecto harum quidem dolorem in!</p>
-                        </div>
+                            <p>
+                                Completed advanced coursework in machine learning, deep learning, and applied AI engineering, 
+                                with emphasis on Python, data preprocessing, model evaluation, and deployment strategies. 
+                                Worked on hands-on projects involving supervised and unsupervised learning, neural networks, and real-world datasets. Strengthened expertise in data pipelines, feature engineering, 
+                                and translating analytical insights into practical business solutions.
+                            </p>
+                        </div> 
                     </div>
                 </div>
 
@@ -98,7 +118,9 @@
                         <div class="timeline-description">
                             <p><i>Globe Telecom Inc</i></p>
                             <br>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut architecto harum quidem dolorem in!</p>
+                            <p>
+                                Led operating system and database administration initiatives for enterprise environments, overseeing installation, patching, upgrades, and performance optimization. Managed database reliability, backup and recovery strategies, access controls, and security compliance. Conducted system reviews and capacity planning to ensure high availability and operational stability across production environments.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -117,7 +139,9 @@
                         <div class="timeline-description">
                             <p><i>Globe Telecom Inc</i></p>
                             <br>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut architecto harum quidem dolorem in!</p>
+                            <p>
+                                Designed and maintained backend services and data processing solutions supporting large-scale telecom operations. Developed ETL/ELT pipelines, optimized SQL queries, and implemented APIs for data integration across systems. Worked extensively with relational databases and data transformation frameworks to ensure data accuracy, performance, and scalability for analytics and reporting.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -136,7 +160,10 @@
                         <div class="timeline-description">
                             <p><i>Globe Telecom Inc</i></p>
                             <br>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut architecto harum quidem dolorem in!</p>
+                            <p>Developed and maintained enterprise applications supporting internal and customer-facing platforms. 
+                                Translated business requirements into technical specifications, implemented backend logic and database integrations, and improved application performance through refactoring and optimization. 
+                                Collaborated with cross-functional teams to deliver stable and scalable software solutions.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -155,7 +182,7 @@
                         <div class="timeline-description">
                             <p><i>Digitel Mobile Systems Inc</i></p>
                             <br>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut architecto harum quidem dolorem in!</p>
+                            <p>Built and maintained dynamic web applications and internal portals, focusing on responsive UI implementation and backend integration. Worked with relational databases and server-side scripting to support telecom operations. Contributed to feature enhancements, bug resolution, and performance improvements in production systems.</p>
                         </div>
                     </div>
                 </div>
@@ -174,7 +201,10 @@
                         <div class="timeline-description">
                             <p><i>DVPRO Solutions Inc</i></p>
                             <br>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut architecto harum quidem dolorem in!</p>
+                            <p>Engineered software solutions across multiple client projects, contributing to system design, coding, 
+                                testing, and deployment. Participated in full software development lifecycle processes, ensuring 
+                                adherence to coding standards and performance benchmarks. Delivered reliable, maintainable applications 
+                                aligned with business requirements.</p>
                         </div>
                     </div>
                 </div>
@@ -193,7 +223,11 @@
                         <div class="timeline-description">
                             <p><i>Mapua Institute of Technology</i></p>
                             <br>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut architecto harum quidem dolorem in!</p>
+                            <p>
+                                Completed a comprehensive program combining information systems, database management, 
+                                business processes, and systems analysis. Developed strong foundations in software engineering principles, 
+                                data modeling, and IT governance, preparing for enterprise technology roles.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -211,8 +245,12 @@
                         </div>    
                         <div class="timeline-description">
                             <p><i>Mapua Institute of Technology Center</i></p>
-                            <br>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut architecto harum quidem dolorem in!</p>
+                             <br>
+                            <p>
+                                Built foundational expertise in programming, systems development, and IT infrastructure concepts. 
+                                The program emphasized practical technical skills alongside business systems understanding, 
+                                forming the basis for a long-term career in software and data engineering.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -227,28 +265,28 @@
                 <div class="card">
                     <div class="title">Programming & Backend</div>
                     <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, voluptatum. Magni hic, voluptate debitis esse corporis dolor laudantium quae quo!</p>
+                    <p>C# • ASP.NET • Python • Flask • REST APIs • SQL • Bash • Linux</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="title">Databases & SQL</div>
                     <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, voluptatum. Magni hic, voluptate debitis esse corporis dolor laudantium quae quo!</p>
+                    <p>MS SQL Server • PostgreSQL • MySQL • Snowflake • Stored Procedures • Window Functions</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="title">Cloud & DevOps</div>
                     <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, voluptatum. Magni hic, voluptate debitis esse corporis dolor laudantium quae quo!</p>
+                    <p>Azure Data Lake • Azure Data Factory • AWS S3 • Docker • CI/CD • GitHub</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="title">Data & ETL Tools</div>
                     <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, voluptatum. Magni hic, voluptate debitis esse corporis dolor laudantium quae quo!</p>
+                    <p>dbt • ETL/ELT Pipelines • Data Warehousing • Data Modeling</p>
                     </div>
                 </div>
 
@@ -259,6 +297,18 @@
             <div class="container swiper">
                 <div class="card-wrapper">
                     <ul class="card-list swiper-wrapper">
+
+                        <li class="card-item swiper-slide">
+                            <a href="#" class="card-link">
+                                <img src="assets/warehouse.jpg" alt="" class="card-image gray-img">
+                                <p class="badge">Web Development</p>
+                                <h2 class="card-title">
+                                Modernizing a legacy system originally built with MS SQL and C# ASP.NET by 
+                                redeveloping it with Python, Flask, React, and PostgreSQL.
+                                </h2>
+                                <button class="material-symbols-outlined card-button">arrow_forward</button>
+                            </a>
+                        </li>
 
                         <li class="card-item swiper-slide">
                             <a href="https://github.com/FNeal10/Etf-Stocks" class="card-link">
@@ -276,7 +326,7 @@
                         <li class="card-item swiper-slide">
                             <a href="#" class="card-link">
                                 <img src="assets/bible.jpg" alt="" class="card-image gray-img">
-                                <p class="badge">NLP / RAG</p> 
+                                <p class="badge">NLP</p> 
                                 <h2 class="card-title">
                                    NLP pipeline using Python to extract and structure KJV Bible PDF 
                                     data into books, chapters, and verses, stored in PostgreSQL for downstream analysis.
@@ -295,31 +345,31 @@
                                 </h2>
                                 <button class="material-symbols-outlined card-button">arrow_forward</button>
                             </a>
-                        </li>
+                        </li>                        
 
-                         <li class="card-item swiper-slide">
+                        <li class="card-item swiper-slide">
                             <a href="#" class="card-link">
-                                <img src="assets/warehouse.jpg" alt="" class="card-image gray-img">
-                                <p class="badge">Web Development</p>
+                                <img src="assets/python.png" alt="" class="card-image gray-img">
+                                <p class="badge">Python Leetcode</p>
                                 <h2 class="card-title">
-                                Designed and built a web-based inventory system with C# ASP.NET 
-                                and MS SQL Server to manage inventory, invoicing, and delivery tracking.
+                                Practiced coding and problem-solving in Python by solving algorithm and data structure 
+                                challenges on LeetCode, focusing on clean, efficient solutions.
                                 </h2>
                                 <button class="material-symbols-outlined card-button">arrow_forward</button>
                             </a>
                         </li>
 
-                        <!-- <li class="card-item swiper-slide" style="visibility: hidden;">
+                        <li class="card-item swiper-slide">
                             <a href="#" class="card-link">
-                                <img src="assets/posture.jpg" alt="" class="card-image">
-                                <p class="badge">AI / ML</p>
-                                <h2 class="card-title">Lorem 
-                                    ipsum dolor sit amet, consectetur adipisicing elit. In enim reiciendis laborum quaerat, 
-                                    sunt, modi, nulla excepturi corrupti cum minima odit natus voluptate esse quas laboriosam 
-                                    possimus? Nisi, ex omnis.</h2>
+                                <img src="assets/sql.jpg" alt="" class="card-image gray-img">
+                                <p class="badge">SQL Leetcode</p>
+                                <h2 class="card-title">
+                                Practiced writing SQL queries for data extraction, transformation, and analysis, 
+                                working with relational databases to solve real-world data problems.
+                                </h2>
                                 <button class="material-symbols-outlined card-button">arrow_forward</button>
                             </a>
-                        </li> -->
+                        </li>
 
                     </ul>
 

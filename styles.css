@@ -45,6 +45,59 @@ section {
   filter: grayscale(0%);
 }
 
+/* #################### 
+    NAV BAR
+#################### */ 
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    position: fixed;
+    top: 0;/* hidden initially */
+    left: 0;
+    right: 0;
+    background-color: var(--card-color);
+    transition: top 0.3s ease-in-out;
+    z-index: 1000;
+    font-family: var(--font-duexieme);
+}
+.nav-links{
+    display: flex;       /* MISSING */
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    margin: 0;           /* remove default ul margin */
+    padding: 0;
+    margin-right: 20px;
+    text-transform: uppercase;
+    border: 0px solid red;
+}
+
+a {
+    color: var(--couleur-primaire);
+    font-weight: 700;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+    margin-left: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.logo:hover{
+    cursor: default;
+}
+
 
 /* #################### 
     HOME CONTAINER
@@ -147,7 +200,7 @@ hr {
     flex-direction: column;
     width: 65vw;
     margin: auto;
-    padding-top: 10rem;
+    padding-top: 12rem;
     padding-bottom: 2rem;
 }
 .timeline-container p {
@@ -161,7 +214,7 @@ hr {
     border-radius: 20px;
     background-color: #ffffff;
     border: 1px solid var(--card-border-color);
-    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+    
 }
 
 .timeline-event-icon {
@@ -170,9 +223,10 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-basis: 40%;
+
     font-size: 2rem;
     padding: 20px;
+    width: 15rem;
 }
 .timeline-event-icon i {
   position: absolute;
@@ -183,18 +237,18 @@ hr {
 }
 
 .timeline-event-date {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     white-space: nowrap;
 }
 
 .timeline-content {
     padding: 25px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .timeline-title {
     font-family: var(--font-primaire);
-    font-size: 2.0rem;
+    font-size: 1.5rem;
     line-height: 1.4;
     text-transform: uppercase;
     font-weight: 800;
@@ -226,6 +280,18 @@ hr {
   transform: translateY(-50%);
   border: 2px solid var(--couleur-primaire);
 }
+
+.timeline-event:hover::before {
+    background: var(--couleur-primaire);
+    border-color: var(--couleur-primaire);
+}
+.timeline-event:hover {
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+.timeline-event:hover .timeline-event-icon i {
+    color: #fff;
+}
+
 .timeline-event:last-child:after {
   content: none;
 }
@@ -233,7 +299,6 @@ hr {
 /* #################### 
     TECH STACK CONTAINER
 #################### */ 
-/* Container */
 #techstack {
     min-height: 100vh;
     padding: 5rem 0;
@@ -305,7 +370,10 @@ hr {
     background: linear-gradient(to right, var(--couleur-primaire), var(--couleur-duexieme));
     display: block;
 }
-
+.card:hover::after {
+    background: linear-gradient(to right, red, blue);
+    height: 2px;
+}
 
 
 /* =====================
