@@ -51,3 +51,16 @@ window.addEventListener("scroll", () => {
         if (hamburgerNav) hamburgerNav.style.top = "-17vh";
     }
 });
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("nav a");
+
+window.addEventListener("scroll", () => {
+  let scrollPos = window.scrollY + window.innerHeight / 3; // adjust as needed
+
+  sections.forEach(section => {
+    if (scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
+      history.replaceState(null, null, `#${section.id}`); // update URL without jumping
+    }
+  });
+});
