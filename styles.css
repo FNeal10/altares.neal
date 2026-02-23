@@ -54,7 +54,7 @@ nav {
     align-items: center;
     height: 10vh;
     position: fixed;
-    top: 0;/* hidden initially */
+    top: -100px;/* hidden initially */
     left: 0;
     right: 0;
     background-color: var(--card-color);
@@ -123,7 +123,7 @@ hr {
 .home-name {
     font-family: var(--font-primaire);
     color: var(--couleur-primaire);
-    font-size: 10rem;    
+    font-size: 4rem;    
     font-weight: 800;
     text-transform: uppercase;
 }
@@ -131,7 +131,7 @@ hr {
 .home-description {
     font-family: var(--font-duexieme);
     color: var(--couleur-deuxieme);
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 200;
     margin-bottom: 1.75rem;
     text-transform: uppercase;
@@ -142,10 +142,10 @@ hr {
 }
 
 .cv-download-button {
-    padding: 20px 50px;
+    padding: 15px 30px;
     border-radius: 50px;
     border: 1px solid var(--couleur-primaire);
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
     font-weight: 300;
     color: var(--couleur-primaire);
@@ -200,7 +200,7 @@ hr {
     flex-direction: column;
     width: 65vw;
     margin: auto;
-    padding-top: 12rem;
+    padding-top: 4rem;
     padding-bottom: 2rem;
 }
 .timeline-container p {
