@@ -25,27 +25,53 @@ new Swiper('.card-wrapper', {
 });
 
 
+
 const deskNav = document.getElementById("desk-nav");
+
+const hamburgerNav = document.getElementById("hamburger-nav");
+const menuTitle = document.querySelector(".menu-title");
+
+const sections = document.querySelectorAll("section");
+
 const heroHeight = document.querySelector('#home').offsetHeight;
+
+
+const sectionTitles = {
+  home: "",
+  about: "ABOUT ME",
+  techstack: "TECH STACK",
+  projects: "PROJECTS"
+};
 
 window.addEventListener("scroll", () => {
     const scrollY = window.scrollY;
 
-    // Only move desktop nav on scroll
+    // -----------------
+    // Desktop nav scroll
+    // -----------------
     if (deskNav && window.innerWidth > 768) {
-        if (scrollY > heroHeight) {
-            deskNav.style.top = "0";
-        } else {
-            deskNav.style.top = "-17vh";
-        }
+        deskNav.style.top = scrollY > heroHeight ? "0" : "-17vh";
+    }
+
+    // -----------------
+    // Mobile hamburger title
+    // -----------------
+    if (hamburgerNav && menuTitle && window.innerWidth <= 768) {
+        const scrollPos = scrollY + window.innerHeight / 3;
+
+        sections.forEach(section => {
+            if (scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
+                menuTitle.textContent = sectionTitles[section.id] || "";
+            }
+        });
     }
 });
 
-// Hamburger menu toggle (always works on mobile)
+
 function toggleMenu() {
     const icon = document.querySelector('.hamburger-icon');
     const menu = document.querySelector('.menu-links');
 
-    icon.classList.toggle('open');  // animate hamburger
-    menu.classList.toggle('open');  // show/hide links
+    icon.classList.toggle('open');  
+    menu.classList.toggle('open');
 }
