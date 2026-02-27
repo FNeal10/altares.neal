@@ -10,6 +10,15 @@
         display: none; 
     }
 
+    .gray-img {
+        filter: none;       /* remove grayscale */
+        transition: none;   /* remove hover transition */
+    }
+
+    .gray-img:hover {
+        filter: none;       /* ensure hover does nothing */
+    }
+
     /* --------------------
        TECH STACK
     -------------------- */
