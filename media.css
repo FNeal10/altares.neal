@@ -1,0 +1,113 @@
+/* ####################
+    MOBILE RESPONSIVE
+#################### */
+@media screen and (max-width: 768px) {
+
+    /* --------------------
+       GENERAL ELEMENTS
+    -------------------- */
+    hr {
+        display: none; 
+    }
+
+    /* --------------------
+       TECH STACK
+    -------------------- */
+    .techstack-container {
+        grid-template-columns: 1fr; 
+        gap: 1.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* --------------------
+       ABOUT / TIMELINE
+    -------------------- */
+    .timeline-container {
+        width: 90vw;       
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .timeline-event {
+        flex-direction: column;   
+        align-items: flex-start;  
+        position: relative;
+        margin: 2rem 0;
+        padding-left: 1rem;
+        overflow: visible;
+    }
+
+    .timeline-event:after { display: none; }      
+    .timeline-event::before { display: none; }  
+    .timeline-event-icon { display: none; }       
+
+    .timeline-event-date {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .timeline-content {
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .timeline-title { margin: 0; }
+    .timeline-description { flex-basis: auto; }
+    .timeline-description p.date-hidden { display: block; }
+
+    /* --------------------
+       HOME CONTAINER
+    -------------------- */
+    #home {
+        padding: 2rem;
+        height: auto;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-name {
+        font-size: 2.5rem;
+        word-break: break-word;
+    }
+
+    .home-description {
+        font-size: 1.8rem;
+        word-break: break-word;
+    }
+
+    .cert-badges, .home-socials {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cv-download-button {
+        font-size: 10px;
+        padding: 10px 20px;
+    }
+
+    /* --------------------
+       NAVBAR / HAMBURGER
+    -------------------- */
+    #desk-nav { display: none !important; }
+
+    #hamburger-nav {
+        display: flex !important;
+        justify-content: flex-start;  
+        align-items: center;
+        padding: 0 1rem;
+        position: fixed;
+        top: 0; 
+        left: 0;     
+        height: 60px;   
+        z-index: 1000;
+        background-color: var(--card-color);
+    }
+
+    .hamburger-menu { display: flex; align-items: center; }
+}

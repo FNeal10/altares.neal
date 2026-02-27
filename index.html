@@ -7,6 +7,7 @@
     <meta property="og:description" content="Portfolio of software and pipeline projects">
     <meta property="og:image" content="https://fneal10.github.io/altares.neal/preview.png">
     <meta property="og:url" content="https://fneal10.github.io/altares.neal/">
+    
     <title>Francis Neal Altares Portfolio</title>
     
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
     <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css">  
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" href="animations.css">
     </head>
     
@@ -28,6 +30,24 @@
                     <li><a href="#techstack">Tech Stack</a></li>
                     <li><a href="#projects">Projects</a></li>
                 </ul>
+            </div>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <ul>
+                        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                        <li><a href="#techstack" onclick="toggleMenu()">Tech Stack</a></li> 
+                        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    </ul>   
+                </div>
             </div>
         </nav>
 
@@ -81,6 +101,7 @@
                         </div>    
                         <div class="timeline-description">
                             <p><i>Variety Village Children's Charity of Ontario</i></p>
+                            <p class="date-hidden">2024 - 2026</p>
                             <br>
                             <p>Supported day-to-day IT tasks, provided user support, handled account provisioning, and performed data extraction. I also automated user licensing processes to improve efficiency and reduce manual workload</p>
                         </div>
@@ -100,7 +121,8 @@
                         </div>    
                         <div class="timeline-description">
                             <p><i>Lambton College in Toronto</i></p>
-                            <br>
+                            <p class="date-hidden">2023 - 2024</p>
+                            <br>                           
                             <p>
                                 Completed advanced coursework in machine learning, deep learning, and applied AI engineering, 
                                 with emphasis on Python, data preprocessing, model evaluation, and deployment strategies. 
@@ -124,6 +146,7 @@
                         </div>    
                         <div class="timeline-description">
                             <p><i>Globe Telecom Inc</i></p>
+                             <p class="date-hidden">2022 - 2023</p>
                             <br>
                             <p>
                                 Led operating system and database administration initiatives for enterprise environments, overseeing installation, patching, upgrades, and performance optimization. Managed database reliability, backup and recovery strategies, access controls, and security compliance. Conducted system reviews and capacity planning to ensure high availability and operational stability across production environments.
@@ -145,6 +168,7 @@
                         </div>    
                         <div class="timeline-description">
                             <p><i>Globe Telecom Inc</i></p>
+                             <p class="date-hidden">2019 - 2022</p>
                             <br>
                             <p>
                                 Designed and maintained backend services and data processing solutions supporting large-scale telecom operations. Developed ETL/ELT pipelines, optimized SQL queries, and implemented APIs for data integration across systems. Worked extensively with relational databases and data transformation frameworks to ensure data accuracy, performance, and scalability for analytics and reporting.
@@ -166,6 +190,7 @@
                         </div>    
                         <div class="timeline-description">
                             <p><i>Globe Telecom Inc</i></p>
+                             <p class="date-hidden">2012 - 2018</p>
                             <br>
                             <p>Developed and maintained enterprise applications supporting internal and customer-facing platforms. 
                                 Translated business requirements into technical specifications, implemented backend logic and database integrations, and improved application performance through refactoring and optimization. 
@@ -188,6 +213,7 @@
                         </div>    
                         <div class="timeline-description">
                             <p><i>Digitel Mobile Systems Inc</i></p>
+                             <p class="date-hidden">2011 - 2012</p>
                             <br>
                             <p>Built and maintained dynamic web applications and internal portals, focusing on responsive UI implementation and backend integration. Worked with relational databases and server-side scripting to support telecom operations. Contributed to feature enhancements, bug resolution, and performance improvements in production systems.</p>
                         </div>
@@ -207,6 +233,7 @@
                         </div>    
                         <div class="timeline-description">
                             <p><i>DVPRO Solutions Inc</i></p>
+                             <p class="date-hidden">2008 - 2011</p>
                             <br>
                             <p>Engineered software solutions across multiple client projects, contributing to system design, coding, 
                                 testing, and deployment. Participated in full software development lifecycle processes, ensuring 
@@ -229,6 +256,7 @@
                         </div>    
                         <div class="timeline-description">
                             <p><i>Mapua Institute of Technology</i></p>
+                             <p class="date-hidden">2005 - 2008</p>
                             <br>
                             <p>
                                 Completed a comprehensive program combining information systems, database management, 
@@ -252,6 +280,7 @@
                         </div>    
                         <div class="timeline-description">
                             <p><i>Mapua Institute of Technology Center</i></p>
+                             <p class="date-hidden">2002 - 2005</p>
                              <br>
                             <p>
                                 Built foundational expertise in programming, systems development, and IT infrastructure concepts. 

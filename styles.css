@@ -54,7 +54,7 @@ nav {
     align-items: center;
     height: 10vh;
     position: fixed;
-    top: -100px;/* hidden initially */
+    top: -100px; /* hidden initially */
     left: 0;
     right: 0;
     background-color: var(--card-color);
@@ -63,11 +63,11 @@ nav {
     font-family: var(--font-duexieme);
 }
 .nav-links{
-    display: flex;       /* MISSING */
+    display: flex;      
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
-    margin: 0;           /* remove default ul margin */
+    margin: 0;          
     padding: 0;
     margin-right: 20px;
     text-transform: uppercase;
@@ -97,6 +97,90 @@ a:hover {
 .logo:hover{
     cursor: default;
 }
+
+
+
+/* #################### 
+    BURGER MENU
+#################### */ 
+#hamburger-nav {
+    display: none;
+}
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links {
+    font-family: var(--font-duexieme);
+    text-transform: uppercase;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--card-color);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+
 
 
 /* #################### 
@@ -270,6 +354,11 @@ hr {
     flex-basis: 60%;
 }
 
+
+.timeline-description p.date-hidden {
+    display: none; 
+}
+
 .timeline-event:after {
   content: "";
   width: 2px;
@@ -308,8 +397,9 @@ hr {
   content: none;
 }
 
+
 /* #################### 
-    TECH STACK CONTAINER
+    TECHNOLOGY STACK CONTAINER
 #################### */ 
 #techstack {
     min-height: 100vh;
@@ -319,51 +409,42 @@ hr {
 .techstack-container {
     padding-top: 5rem;
     padding-bottom: 2rem;
-    width: min(75rem, 100%);
+    width: min(60rem, 100%);
     margin-inline: auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); 
     gap: 2rem;
+    align-items: stretch; 
 }
 
-/* Card */
 .card {
     padding: 2rem;
     background-color: var(--card-color);
-    height: 20rem;
-    display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template:
-        "title"
-        "content"
-        "bar";
-    
-    border-radius: 1rem;
+    display: flex;          
+    flex-direction: column;
+    border-radius: 0rem;
     border: 1px solid var(--card-border-color);
     box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-    align-items: start;
-    gap: 0;
+    gap: 1rem;
+    height: auto;         
 }
 
-/* Title */
 .card .title {
     font-family: var(--font-primaire);
     font-size: 2rem;
     font-weight: 800;
-    grid-area: title;
-    align-self: start;
     text-align: center;
     text-transform: uppercase;
     word-break: break-word;
     margin-bottom: 0;
 }
 
-
-/* Content */
 .card .content {
     font-family: var(--font-duexieme);
-    grid-area: content;
     font-size: 1.5rem;
+    flex: 1;               
+    display: flex;
+    flex-direction: column;
 }
 
 .card .content > *:first-child {
@@ -374,23 +455,22 @@ hr {
     margin-bottom: 0;
 }
 
-/* Optional bottom bar for decoration */
 .card::after {
     content: "";
-    grid-area: bar;
     height: 1px;
     background: linear-gradient(to right, var(--couleur-primaire), var(--couleur-duexieme));
-    display: block;
+    margin-top: auto;      
 }
 .card:hover::after {
-    background: linear-gradient(to right, red, blue);
+    background: linear-gradient(to right, green, blue);
     height: 2px;
 }
 
 
-/* =====================
-   PROJECTS SECTION
-===================== */
+
+/* #################### 
+    PROJECTS CONTAINER
+#################### */ 
 #projects {
     display:flex;
     align-items: center;
