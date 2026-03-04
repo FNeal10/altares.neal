@@ -315,22 +315,12 @@ hr {
     display: flex;
     margin: 20px 0;
     border-radius: 20px;
-    background-color: #ffffff;
+    background-color: var(--card-color);
     border: 0px solid var(--card-border-color);
     
 }
 
-.timeline-event-icon {
-    border-radius: 8px 0 0 8px;
-    background-color: var(--card-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    font-size: 2rem;
-    padding: 20px;
-    width: 15rem;
-}
 .timeline-event-icon i {
   position: absolute;
   top: 50%;
