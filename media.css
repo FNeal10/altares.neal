@@ -11,12 +11,16 @@
     }
 
     .gray-img {
-        filter: none;       /* remove grayscale */
-        transition: none;   /* remove hover transition */
+        filter: none;       
+        transition: none;   
     }
 
     .gray-img:hover {
-        filter: none;       /* ensure hover does nothing */
+        filter: none;       
+    }
+
+    .shimmer {
+         animation: shimmer 2.5s infinite; font-size: 50px; max-width: 200px; 
     }
 
     /* --------------------

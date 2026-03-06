@@ -3,3 +3,14 @@
   40% { transform: translateY(8px); }
   60% { transform: translateY(4px); }
 }
+
+@keyframes shimmer {
+  0% {
+    -webkit-mask-position: bottom left;
+    mask-position: bottom left;
+  }
+  100% {
+    -webkit-mask-position: top right;
+    mask-position: top right;
+  }
+}

@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
+
+
+
 :root{
 
     --body-color:  linear-gradient(to bottom, #ffffff, #f3f4f6);
 
     --card-color:  #f9f9f9;
     --card-border-color: #e0e0e0;
-
  
     --couleur-primaire: #111111;
     --couleur-duexieme: #444444;
@@ -14,6 +16,7 @@
     --font-primaire: 'Merriweather', serif;
     --font-duexieme: 'Playfair Display', serif;
     --font-troisieme: 'Roboto Flex', sans-serif;
+
 }
 
 * {
@@ -261,9 +264,17 @@ hr {
 }
 
 .badges {
-    cursor: pointer;
+  cursor: pointer;
     height: 4rem;
 }
+
+.shimmer { 
+    color: grey; display: inline-block; 
+    mask: linear-gradient(-60deg, #000 30%, #0005, #000 70%) right/350% 100%; 
+   
+} 
+
+
 
 .home-socials {
     display: flex;
