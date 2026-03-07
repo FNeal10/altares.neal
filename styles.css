@@ -17,6 +17,9 @@
     --font-duexieme: 'Playfair Display', serif;
     --font-troisieme: 'Roboto Flex', sans-serif;
 
+    --shimmer-color: gray;
+    --shimmer-second: black;
+
 }
 
 * {
@@ -45,8 +48,9 @@ section {
 }
 
 .gray-img:hover {
-  filter: grayscale(0%);
+    filter: grayscale(0%);
 }
+
 
 /* #################### 
     NAV BAR
@@ -269,6 +273,8 @@ hr {
 }
 
 .shimmer { 
+    /* color: var(--shimmer-color); display: inline-block; 
+    mask: linear-gradient(-60deg, var(--shimmer-second) 30%, var(--shimmer-second), var(--shimmer-second) 70%) right/350% 100%;  */
     color: grey; display: inline-block; 
     mask: linear-gradient(-60deg, #000 30%, #0005, #000 70%) right/350% 100%; 
    
