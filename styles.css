@@ -231,13 +231,25 @@ hr {
     color: var(--couleur-deuxieme);
     font-size: 3rem;
     font-weight: 200;
-    margin-bottom: 1.75rem;
+    margin-bottom: 0.5rem;
     text-transform: uppercase;
+    border:0px solid red;
 }
 
 .home-csv {
     margin: 1.75rem 0;
     margin-top: 0.5rem;
+}
+
+.home-tech-stack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.techstack-icons {
+    cursor: none;
+    height: 1.5rem;
 }
 
 .cv-download-button {
@@ -268,7 +280,7 @@ hr {
 }
 
 .badges {
-  cursor: pointer;
+    cursor: pointer;
     height: 4rem;
 }
 
