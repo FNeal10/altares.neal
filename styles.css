@@ -248,7 +248,7 @@ hr {
     gap: 0.5rem;
 }
 .techstack-icons {
-    cursor: none;
+    cursor: pointer;
     height: 1.5rem;
 }
 
