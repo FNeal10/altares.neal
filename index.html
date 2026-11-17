@@ -1,49 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CH7YZSS5BS"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CH7YZSS5BS"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-        gtag('config', 'G-CH7YZSS5BS');
-    </script>
+            gtag('config', 'G-CH7YZSS5BS');
+        </script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="My Portfolio Neal Altares">
-    <meta property="og:description" content="Portfolio of software and pipeline projects">
-    <meta property="og:image" content="https://fneal10.github.io/altares.neal/preview.png">
-    <meta property="og:url" content="https://fneal10.github.io/altares.neal/">
-    
-    <title>Francis Neal Altares Portfolio</title>
-    
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
-    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css">  
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="media.css">
-    <link rel="stylesheet" href="animations.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="My Portfolio Neal Altares">
+        
+        <title>Francis Neal Altares Portfolio</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <link rel="stylesheet" href="./styles/hero.css" />
+        <link rel="stylesheet" href="./styles/projects.css" />
+        <link rel="stylesheet" href="./styles/techstack.css" />
+        <link rel="stylesheet" href="./styles/animations.css" />
     </head>
     
     <body>
 
-        <nav id="desk-nav">
-            <div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#techstack">Tech Stack</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                </ul>
-            </div>
-        </nav>
+        <!-- Particle background -->
+        <div id="tsparticles"></div>
 
-        <nav id="hamburger-nav">
+
+
+        <main>
+            
+            <!-- Navbar -->
+            <nav id="desk-nav">
+                <div>
+                    <ul class="nav-links">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#tech-stack">Tech Stack</a></li>                        
+                    </ul>
+                </div>
+            </nav>
+
+            <nav id="hamburger-nav">
             <div class="hamburger-menu">
                 <div class="hamburger-icon" onclick="toggleMenu()">
                     <span></span>
@@ -56,357 +66,128 @@
                 <div class="menu-links">
                     <ul>
                         <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-                        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                        <li><a href="#techstack" onclick="toggleMenu()">Tech Stack</a></li> 
                         <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                        <li><a href="#tech-stack" onclick="toggleMenu()">Tech Stack</a></li> 
+                        
                     </ul>   
                 </div>
             </div>
         </nav>
 
-        <section id="home">
-            <div class="home-container">
-                <hr>
-                <p class="home-name">Francis Neal Altares</p>
-                <p class="home-description">
-                    <span class="home-role">backend</span>
-                    <span class="home-separator"> & </span>
-                    <span class="home-role">data engineer</span>
-                </p>
-                <hr>
-            </div>
-            <div class="home-csv">
-                <button class="cv-download-button" onclick="window.open('./files/Francis Neal Altares CV.pdf')"  >
-                    Download CV                    
-                </button>
-            </div>
-            <div class="cert-badges">
-                 <img src="assets/dp900.png" alt="DP900 Badge" title="Microsoft Certified: Azure Data Fundamentals (DP-900)"  
-                    class="badges gray-img shimmer" onclick="location.href='https://learn.microsoft.com/en-us/users/neal-5211/credentials/6d4a298a4b0f7e0a'">
-            </div>
-            <div class="home-socials">
-                <img src="assets/linkedin.png" alt="LinkedIn" title="LinkedIn Profile"  class="home-icon gray-img"
-                    onclick="location.href='https://www.linkedin.com/in/francisnealaltares'" />
-                <img src="assets/github.png" alt="Github" title="Github Repo"  class="home-icon gray-img"
-                    onclick="location.href='https://github.com/FNeal10'" />
-               
-            </div>      
-            <!-- <div class="home-scrolldown">
-                <span class="material-icons home-scroll-arrow">
-                    keyboard_arrow_down
-                </span>
-            </div> -->
-        </section>
+            <section id="hero">
+                <div class="hero-title">
+                    <p>Francis Neal Altares</p>
+                </div>
+                <div class="hero-subtitle">
+                    <p>From backend development to data engineering, building practical solutions</p>
+                    <p>that make complex systems work better.</p>
+                </div>
+                <div class="hero-buttons">
+                    <img src="assets/linkedin.png" alt="LinkedIn" title="LinkedIn Profile"  class="social-icons"
+                        onclick="location.href='https://www.linkedin.com/in/francisnealaltares'" />
+                    <img src="assets/github.png" alt="Github" title="Github Repo"  class="social-icons"
+                        onclick="location.href='https://github.com/FNeal10'" />
 
-        <section id="about">
-            <div class="timeline-container">
+                    <button class="cv-button" onclick="window.open('./files/Francis Neal Altares CV.pdf')">
+                        Download Full CV     
+                    <span class="arrow">→</span>               
+                    </button>
+                </div>
 
-                <div class="timeline-event">
-                    <div class="timeline-event-icon">
-                        <i class="lni lni-briefcase"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-title">
-                            Technical Support
-                        </div>    
-                        <div class="timeline-description">
-                            <p><i>WatchNet Inc</i></p>
-                            <br>
-                            <p>
-                                Provided technical support to customers via phone, email, remote sessions, and in-person walk-ins by diagnosing and resolving hardware and software issues. 
-                                Documented support interactions in a ticketing system, delivered timely customer updates, and escalated complex issues to senior technical staff when necessary. 
-                                Assisted with system builds, repairs, upgrades, RMA processing, product testing, and technical documentation.
-                                Collaborated with cross-functional teams to improve service quality, maintain product knowledge, and ensure a high level of customer satisfaction. 
-                            </p>
+
+                    <div class="hero-stats">
+
+                        <div class="stat">
+                            <h1>10+</h1>
+                            <p>Years of Experience</p>
                         </div>
-                    </div>
-                </div>
 
-                <div class="timeline-event">
-                    <div class="timeline-event-icon">
-                        <i class="lni lni-briefcase"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-title">
-                            IT Support Analyst
-                        </div>    
-                        <div class="timeline-description">
-                            <p><i>Variety Village Children's Charity of Ontario</i></p>
-                            <br>
-                            <p>Supported day-to-day IT operations, delivered end-user support, managed account provisioning, and performed 
-                                data extraction and reporting. Automated processes to improve efficiency and reduce manual workload</p>
+                        <div class="stat">
+                            <h1>30+</h1>
+                            <p>Pipelines Completed</p>
                         </div>
-                    </div>
-                </div>
 
-                <div class="timeline-event">
-                    <div class="timeline-event-icon">
-                        <i class="lni lni-graduation"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-title">
-                            Postgraduate in Artificial Intelligence and Machine Learning
-                        </div>    
-                        <div class="timeline-description">
-                            <p><i>Lambton College in Toronto</i></p>
-                            <br>                           
-                            <p>
-                                Completed advanced coursework in machine learning, deep learning, and applied AI engineering, 
-                                with emphasis on Python, data preprocessing, model evaluation, and deployment strategies. 
-                                Worked on hands-on projects involving supervised and unsupervised learning, and real-world 
-                                datasets.
-                            </p>
-                        </div> 
-                    </div>
-                </div>
+                        <div class="stat">
+                            <div class="badges">
+                                <div class="certificate">
+                                    <img class="shimmer" src="assets/dp900.png" 
+                                        alt="DP900 Badge" title="Microsoft Certified: Azure Data Fundamentals (DP-900)"  
+                                        onclick="location.href='https://learn.microsoft.com/en-us/users/neal-5211/credentials/6d4a298a4b0f7e0a'">
+                                </div>
 
-                <div class="timeline-event">
-                    <div class="timeline-event-icon">
-                        <i class="lni lni-briefcase"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-title">
-                            Operating Systems and Database Administration Lead
-                        </div>    
-                        <div class="timeline-description">
-                            <p><i>Globe Telecom Inc</i></p>
-                            <br>
-                            <p>
-                                Led operating system and database administration initiatives for enterprise 
-                                environments, overseeing installation, patching, upgrades, and performance 
-                                optimization. Managed database reliability, backup and recovery strategies, 
-                                access controls, and security compliance. Conducted system reviews and capacity planning to ensure high availability and operational stability across production environments.
-                            </p>
+                                <div class="certificate"></div>
+                                <div class="certificate"></div>
+                                <div class="certificate"></div>
+                                <div class="certificate"></div>
+                            </div>
+
+                            <p class="stat-label">Certifications</p>
                         </div>
+
                     </div>
                 </div>
+            </section>
 
-                <div class="timeline-event">
-                    <div class="timeline-event-icon">
-                        <i class="lni lni-briefcase"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-title">
-                            Backend and Data Developer
-                        </div>    
-                        <div class="timeline-description">
-                            <p><i>Globe Telecom Inc</i></p>
-                            <br>
-                            <p>
-                                Designed and maintained backend services and data processing solutions supporting large-scale telecom operations. Developed ETL/ELT pipelines, optimized SQL queries, and implemented APIs for data integration across systems. Worked extensively with relational databases and data transformation frameworks to ensure data accuracy, performance, and scalability for analytics and reporting.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-event">
-                    <div class="timeline-event-icon">
-                        <i class="lni lni-briefcase"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-title">
-                            Application Developer
-                        </div>    
-                        <div class="timeline-description">
-                            <p><i>Globe Telecom Inc</i></p>
-                            <br>
-                            <p>Developed and maintained enterprise applications supporting internal and customer-facing platforms. 
-                                Translated business requirements into technical specifications, implemented backend logic and database integrations, and improved application performance through refactoring and optimization. 
-                                Collaborated with cross-functional teams to deliver stable and scalable software solutions.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-event">
-                    <div class="timeline-event-icon">
-                        <i class="lni lni-briefcase"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-title">
-                            Web Developer
-                        </div>    
-                        <div class="timeline-description">
-                            <p><i>Digitel Mobile Systems Inc</i></p>
-                            <br>
-                            <p>Built and maintained dynamic web applications and internal portals, focusing on responsive UI implementation and backend integration. Worked with relational databases and server-side scripting to support telecom operations. Contributed to feature enhancements, bug resolution, and performance improvements in production systems.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-event">
-                    <div class="timeline-event-icon">
-                        <i class="lni lni-briefcase"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-title">
-                            Software Engineer
-                        </div>    
-                        <div class="timeline-description">
-                            <p><i>DVPRO Solutions Inc</i></p>
-                            <br>
-                            <p>Engineered software solutions across multiple client projects, contributing to system design, coding, 
-                                testing, and deployment. Participated in full software development lifecycle processes, ensuring 
-                                adherence to coding standards and performance benchmarks. Delivered reliable, maintainable applications 
-                                aligned with business requirements.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-event">
-                    <div class="timeline-event-icon">
-                        <i class="lni lni-graduation"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-title">
-                            Bachelor of Science in Information Management
-                        </div>    
-                        <div class="timeline-description">
-                            <p><i>Mapua Institute of Technology</i></p>
-                            <br>
-                            <p>
-                                Completed a comprehensive program combining information systems, database management, 
-                                business processes, and systems analysis. Developed strong foundations in software engineering principles, 
-                                data modeling, and IT governance, preparing for enterprise technology roles.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-event">
-                    <div class="timeline-event-icon">
-                        <i class="lni lni-graduation"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-title">
-                            Associate's Degree in Management Systems Technology
-                        </div>    
-                        <div class="timeline-description">
-                            <p><i>Mapua Information Technology Center</i></p>
-                             <br>
-                            <p>
-                                Built foundational expertise in programming, systems development, and IT infrastructure concepts. 
-                                The program emphasized practical technical skills alongside business systems understanding, 
-                                forming the basis for a long-term career in software and data engineering.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </section>  
-
-        <section id="techstack">
-            <div class="techstack-container">
-
-                <div class="card">
-                    <div class="title">Programming & Backend</div>
-                    <div class="content">
-                    <p>C# • ASP.NET • Python • Flask • REST APIs • SQL • Bash • Linux</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="title">Databases & SQL</div>
-                    <div class="content">
-                    <p>MS SQL Server • PostgreSQL • MySQL • Snowflake • Stored Procedures • Window Functions</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="title">Cloud & DevOps</div>
-                    <div class="content">
-                    <p>Azure Data Lake • Azure Data Factory • AWS S3 • Docker • CI/CD • GitHub</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="title">Data & ETL Tools</div>
-                    <div class="content">
-                    <p>dbt • ETL/ELT Pipelines • Data Warehousing • Data Modeling</p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="projects">
+            <section id="projects">
             <div class="container swiper">
                 <div class="card-wrapper">
+                    
                     <ul class="card-list swiper-wrapper">
-
-                        <li class="card-item swiper-slide">
-                            <a href="#" class="card-link">
-                                <img src="assets/warehouse.jpg" alt="" class="card-image gray-img">
-                                <p class="badge">Web Development</p>
-                                <h2 class="card-title">
-                                Modernizing a legacy system originally built with MS SQL and C# ASP.NET by 
-                                redeveloping it with .Net Core, React, and PostgreSQL.
-                                </h2>
-                                <!-- <button class="material-symbols-outlined card-button">arrow_forward</button> -->
-                            </a>
-                        </li>
 
                         <li class="card-item swiper-slide">
                             <a href="https://github.com/FNeal10/Etf-Stocks" class="card-link">
                                 <img src="assets/data.jpg" alt="" class="card-image gray-img">
-                                <p class="badge">Data Engineering</p>
-                                <h2 class="card-title">
-                                    End-to-end data pipeline leveraging Python & Selenium for data ingestion, 
-                                    cloud data lake storage (ADLS Gen2 / AWS-ready), 
-                                    dbt and Snowflake for transformations, with CI/CD automated using GitHub Actions. 
-                                </h2>
-                                <!-- <button class="material-symbols-outlined card-button">arrow_forward</button> -->
+                                <h3 class="card-title">END TO END DATA PIPELINE</h3>
+                                <p class="card-description">
+                                    Automated stock market data ingestion, cloud storage, transformation, and
+                                    analytics using an end-to-end data pipeline.
+                                </p>
+                                <div class="card-technologies">
+                                    <span class="tech-pill">Python</span>
+                                    <span class="tech-pill">Selenium</span>
+                                    <span class="tech-pill">Azure ADLS</span>
+                                    <span class="tech-pill">Azure SQL</span>
+                                    <span class="tech-pill">MS SQL</span>
+                                    <span class="tech-pill">Snowflake</span>
+                                    <span class="tech-pill">dbt</span>
+                                    <span class="tech-pill">GitHub Actions</span>
+                                    <span class="tech-pill">CI/CD</span>
+                                    <span class="tech-pill">Power BI</span>
+                                </div>
                             </a>
                         </li>
 
-                         <li class="card-item swiper-slide">
+                        <li class="card-item swiper-slide">
                             <a href="#" class="card-link">
-                                <img src="assets/members.jpg" alt="" class="card-image gray-img">
-                                <p class="badge">Web App / API</p>
-                                <h2 class="card-title">
-                                A membership management app using Django, React, and PostgreSQL, enabling users to manage member records through a simple, responsive dashboard.
-                                </h2>
-                              <!--  <button class="material-symbols-outlined card-button">arrow_forward</button> -->
+                                <img src="assets/warehouse.jpg" alt="" class="card-image gray-img">
+                                <h3 class="card-title">WAREHOUSE MANAGEMENT SYSTEM</h3>
+                                <p class="card-description">
+                                    Web-based management system with a user-friendly interface, 
+                                    enabling efficient inventory tracking, order processing, and reporting.
+                                </p>
+                                <div class="card-technologies">
+                                    <span class="tech-pill">C#</span>
+                                    <span class="tech-pill">ASP.NET</span>
+                                    <span class="tech-pill">MS SQL</span>
+                                    <span class="tech-pill">Bootstrap</span>
+                                    <span class="tech-pill">HTML</span>
+                                    <span class="tech-pill">CSS</span>
+                                </div>
                             </a>
                         </li>
 
-                        <!-- <li class="card-item swiper-slide">
-                            <a href="https://github.com/FNeal10/Bible-NLP" class="card-link">
-                                <img src="assets/bible.jpg" alt="" class="card-image gray-img">
-                                <p class="badge">NLP / RAG</p> 
-                                <h2 class="card-title">
-                                   NLP pipeline using Python to extract and structure KJV Bible PDF 
-                                    data into books, chapters, and verses, stored in PostgreSQL for downstream analysis.
-                                </h2>
-                                  <button class="material-symbols-outlined card-button">arrow_forward</button> 
-                            </a>
-                        </li> -->
-
-                        <!-- <li class="card-item swiper-slide">
-                            <a href="#" class="card-link">
-                                <img src="assets/strava.jpg" alt="" class="card-image gray-img">
-                                <p class="badge">Webhook / Rest API</p>
-                                <h2 class="card-title">
-                                    Built a real-time data pipeline using Strava webhooks and REST APIs to 
-                                    ingest workout data for analytics and performance insights.
-                                </h2>
-                                <button class="material-symbols-outlined card-button">arrow_forward</button>
-                            </a>
-                        </li>                         -->
-
-                       
 
                         <li class="card-item swiper-slide">
                             <a href="https://github.com/FNeal10/SQL" class="card-link">
                                 <img src="assets/sql.jpg" alt="" class="card-image gray-img">
-                                <p class="badge">SQL Leetcode</p>
-                                <h2 class="card-title">
-                                Practiced writing SQL queries for data extraction, transformation, and analysis, 
-                                working with relational databases to solve real-world data problems.
-                                </h2>
-                                <!-- <button class="material-symbols-outlined card-button">arrow_forward</button> -->
+                                <h3 class="card-title">SQL LEETCODE</h3>
+                                <p class="card-description">
+                                    A collection of SQL queries and solutions to various problems, 
+                                    showcasing proficiency in database management and data manipulation.
+                                </p>
+                                <div class="card-technologies">
+                                    <span class="tech-pill">SQL Queries</span>
+                                </div>
                             </a>
                         </li>
 
@@ -418,10 +199,160 @@
 
                 </div>
             </div>
-        </section>
 
-        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-        <script src="scripts.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+            <script src="./js/scripts.js"></script>
+
+            </section>
+            
+            <section id="tech-stack">
+                <div class="tech-container">
+
+                    <div class="tech-layout">
+                        
+                        <div class="tech-box tech-featured">
+                            <div class="tech-box-header">
+                                <h3>Core Data Engineering</h3>
+                            </div>
+                            <div class="tech-icons">
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/python.png" alt="Python">
+                                    <span>Python</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/azure-sql-db.png" alt="SQL Server">
+                                    <span>SQL</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/azure.png" alt="Microsoft Azure">
+                                    <span>Azure</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/aws.png" alt="Amazon Web Services">
+                                    <span>AWS</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/snowflake.png" alt="Snowflake">
+                                    <span>Snowflake</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/dbt.png" alt="dbt">
+                                    <span>dbt</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Backend -->
+                        <div class="tech-box">
+                            <h3>Backend Development</h3>
+                            <div class="tech-icons">
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/csharp.png" alt="C#">
+                                    <span>C#</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/asp-net-core.png" alt="ASP.NET">
+                                    <span>ASP.NET</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/fastapi.png" alt="FastAPI">
+                                    <span>FastAPI</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- DevOps -->
+                        <div class="tech-box">
+                            <h3>DevOps & Automation</h3>
+
+                            <div class="tech-icons">
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/git.png" alt="Git">
+                                    <span>Git</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/docker.png" alt="Docker">
+                                    <span>Docker</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/github-light.png" alt="GitHub Actions">
+                                    <span>GitHub</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/apache-airflow.png" alt="Airflow">
+                                    <span>Airflow</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Analytics -->
+                        <div class="tech-box">
+                            <h3>Analytics & BI</h3>
+                            <div class="tech-icons">
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/powerbi.png" alt="Power BI">
+                                    <span>Power BI</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/ibm.png" alt="IBM Cognos">
+                                    <span>IBM Cognos</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Databases -->
+                        <div class="tech-box">
+                            <h3>Databases</h3>
+                            <div class="tech-icons">
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/microsoft-sql-server.png" alt="MS SQL Server">
+                                    <span>MS SQL</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/oracle.png" alt="Oracle">
+                                    <span>Oracle</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/postgresql.png" alt="PostgreSQL">
+                                    <span>PostgreSQL</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/mysql.png" alt="MySQL">
+                                    <span>MySQL</span>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+         
+
+        </main>
+
+
+        <!-- Load tsParticles -->
+        <script src="https://cdn.jsdelivr.net/npm/@tsparticles/engine@4/tsparticles.engine.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tsparticles/slim@4/tsparticles.slim.bundle.min.js"></script>
+    
+        <script src="./js/particles.js"></script>
 
     </body>
 </html>

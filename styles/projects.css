@@ -1,0 +1,253 @@
+#projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 50px 20px 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: var(--nav-font);
+}
+
+.card-wrapper {
+    max-width: 900px;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow:hidden;
+}
+
+.card-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.card-list .card-item {
+    list-style: none;
+    height: auto;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+/* ####################
+   PROJECT CARD
+#################### */
+
+.card-list .card-item .card-link {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    padding: 0;
+    background: var(--card-color);
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+
+    text-decoration: none;
+    user-select: none;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+/* CARD HOVER */
+.card-list .card-item .card-link:hover {
+    transform: translateY(-4px);
+    border-color: var(--couleur-troisieme);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.16);
+}
+
+/* #################### PROJECT IMAGE #################### */
+.card-list .card-link .card-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 13px 13px 0 0;
+    transition: filter 0.3s ease;
+}
+
+.card-list .card-link:hover .card-image {
+    filter: brightness(1.05);
+}
+
+/* #################### PROJECT TITLE #################### */
+.card-list .card-link .card-title {
+    font-family: var(--font-duexieme);
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.4;
+
+    color: #1f2937;
+    text-align: center;
+
+    margin: 15px 12px 10px;
+    overflow-wrap: break-word;
+}
+
+/* #################### PROJECT DESCRIPTION #################### */
+.card-list .card-link .card-description {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+    color: #6b7280;
+    text-align: left;
+
+    margin: 0 14px 10px;
+    overflow-wrap: break-word;
+}
+
+/* #################### TECHNOLOGIES CONTAINER #################### */
+.card-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-end;
+
+    gap: 6px;
+    width: 100%;
+
+    margin-top: auto;
+    padding: 10px 14px 14px;
+
+    box-sizing: border-box;
+}
+
+/* ####################
+   TECHNOLOGY PILLS
+#################### */
+
+.card-technologies .tech-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+
+    padding: 5px 10px;
+    margin: 0;
+
+    font-size: 0.7rem;
+    font-weight: 500;
+    line-height: 1.2;
+
+    color: #374151;
+    background: #f3f4f6;
+
+    border: 1px solid #d1d5db;
+    border-radius: 50px;
+
+    white-space: nowrap;
+    box-sizing: border-box;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+/* TECHNOLOGY HOVER */
+.card-list .card-link:hover .tech-pill {
+    background: #e5e7eb;
+    border-color: #9ca3af;
+    color: #111827;
+}
+
+/* ####################
+   SWIPER PAGINATION
+#################### */
+
+.card-wrapper .swiper-pagination {
+    bottom: 5px;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    opacity: 0.4;
+    background: ghostwhite;
+    transition: opacity 0.3s ease;
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+/* ####################
+   SWIPER NAVIGATION
+#################### */
+
+.card-wrapper .swiper-slide-button {
+    color: var(--card-arrow-color, #374151);
+    z-index: 10;
+    transition: color 0.3s ease;
+}
+
+.card-wrapper .swiper-slide-button:hover {
+    color: var(--card-arrow-hover-color, #111827);
+}
+
+.card-wrapper .swiper-button-prev {
+    left: 0;
+}
+
+.card-wrapper .swiper-button-next {
+    right: 0;
+}
+
+/* ####################
+RESPONSIVE
+#################### */
+@media (max-width: 1023px) {
+    #projects {
+        padding: 40px 20px;
+    }
+
+    .card-wrapper {
+        max-width: 700px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    #projects {
+        min-height: auto;
+        padding: 40px 15px;
+    }
+
+    .card-wrapper {
+        max-width: 450px;
+        padding: 20px 5px 45px;
+    }
+
+    .card-list .card-item .card-link {
+        height: 400px;
+    }
+
+    .card-wrapper .swiper-slide-button {
+        display: none;
+    }
+
+    .card-list .card-link .card-title {
+        font-size: 0.9rem;
+    }
+
+    .card-list .card-link .card-description {
+        font-size: 0.75rem;
+    }
+
+    .card-technologies .tech-pill {
+        font-size: 0.68rem;
+    }
+}

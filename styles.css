@@ -207,8 +207,14 @@ a:hover {
     align-items: center;     
     text-align: center;        
     min-height: fit-content;
+     background-image: url("assets/hero.jpg");
+    background-size: cover;
+    background-position: center;
+   filter: grayscale(100%) brightness(3) contrast(0.4);
+    background-repeat: no-repeat;
     height:100vh;
 }
+
 
 hr {
     border: none;

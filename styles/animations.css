@@ -1,0 +1,5 @@
+@keyframes shimmer {
+    to {
+        mask-position: left;
+    }
+}
