@@ -87,6 +87,7 @@ main {
 
 section {
     min-height: 100vh;
+    scroll-margin-top: 90px;
 }
 
 /* #################### 

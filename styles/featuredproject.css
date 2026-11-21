@@ -1,0 +1,168 @@
+#featuredproject {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 120px 8% 80px;
+    box-sizing: border-box;
+    font-family: var(--nav-font);
+    color: rgba(242, 238, 240, 0.92);
+}
+
+.case {
+    width: 100%;
+    max-width: 980px;
+}
+
+.case-kicker {
+    margin-bottom: 12px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--card-arrow-hover-color);
+}
+
+.case h2 {
+    font-size: clamp(1.7rem, 4vw, 2.5rem);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    line-height: 1.15;
+    text-transform: uppercase;
+}
+
+.case-lead {
+    max-width: 40rem;
+    margin-top: 16px;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.pipeline {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 12px;
+    margin: 36px 0 14px;
+    padding: 0;
+    list-style: none;
+}
+
+.pipeline li {
+    min-width: 0;
+    padding: 16px 14px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.pipeline img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    margin-bottom: 18px;
+}
+
+.pipeline .step {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.pipeline strong {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.pipeline em {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.75rem;
+    font-style: normal;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.pipeline-note {
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.case-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 32px;
+}
+
+.case-grid h3 {
+    margin-bottom: 8px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.case-grid p {
+    font-size: 0.92rem;
+    font-weight: 300;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.62);
+}
+
+.case-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 28px;
+    padding: 8px 18px;
+    border: 1px solid var(--nav-font-border-color);
+    border-radius: 50px;
+    font-size: 12px;
+    color: white;
+}
+
+.case-link:hover {
+    background: var(--card-arrow-hover-color);
+    color: black;
+    text-decoration: none;
+}
+
+.also {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 28px;
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.also .label {
+    width: 100%;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.also p,
+.also a {
+    color: rgba(242, 238, 240, 0.9);
+}
+
+.also span {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+

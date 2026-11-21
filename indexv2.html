@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CH7YZSS5BS"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-CH7YZSS5BS');
+        </script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="My Portfolio Neal Altares">
+        
+        <title>Francis Neal Altares Portfolio</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <link rel="stylesheet" href="./styles/hero.css" />
+        <link rel="stylesheet" href="./styles/projects.css" />
+        
+        <link rel="stylesheet" href="./styles/projects2.css" />
+        <link rel="stylesheet" href="./styles/techstack.css" />
+        <link rel="stylesheet" href="./styles/animations.css" />
+    </head>
+    
+    <body>
+
+        <!-- Particle background -->
+        <div id="tsparticles"></div>
+
+
+
+        <main>
+            
+            <!-- Navbar -->
+            <nav id="desk-nav">
+                <div>
+                    <ul class="nav-links">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#tech-stack">Tech Stack</a></li>                        
+                    </ul>
+                </div>
+            </nav>
+
+            <nav id="hamburger-nav">
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div>
+                    <p class="menu-title"></p>
+                </div>
+                <div class="menu-links">
+                    <ul>
+                        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                        <li><a href="#tech-stack" onclick="toggleMenu()">Tech Stack</a></li> 
+                        
+                    </ul>   
+                </div>
+            </div>
+        </nav>
+
+            <section id="hero">
+                <div class="hero-title">
+                    <p>Francis Neal Altares</p>
+                </div>
+                <div class="hero-subtitle">
+                    <p>Data engineer. I turn operational data into pipelines and reports people use.</p>
+                </div>
+                <div class="hero-buttons">
+                    <img src="assets/linkedin.png" alt="LinkedIn" title="LinkedIn Profile"  class="social-icons"
+                        onclick="location.href='https://www.linkedin.com/in/francisnealaltares'" />
+                    <img src="assets/github.png" alt="Github" title="Github Repo"  class="social-icons"
+                        onclick="location.href='https://github.com/FNeal10'" />
+
+                    <button class="cv-button" onclick="window.open('./files/FrancisNealAltares.pdf')">
+                        Download Full CV     
+                    <span class="arrow">→</span>               
+                    </button>
+                </div>
+
+
+                    <div class="hero-stats">
+
+                        <div class="stat">
+                            <h1>10+</h1>
+                            <p>Years of Experience</p>
+                        </div>
+
+                        <div class="stat">
+                            <h1>30+</h1>
+                            <p>Pipelines Completed</p>
+                        </div>
+
+                        <div class="stat">
+                            <div class="badges">
+                                <div class="certificate">
+                                    <img class="shimmer" src="assets/dp900.png" 
+                                        alt="DP900 Badge" title="Microsoft Certified: Azure Data Fundamentals (DP-900)"  
+                                        onclick="location.href='https://learn.microsoft.com/en-us/users/neal-5211/credentials/6d4a298a4b0f7e0a'">
+                                </div>
+
+                                <div class="certificate"></div>
+                                <div class="certificate"></div>
+                                <div class="certificate"></div>
+                                <div class="certificate"></div>
+                            </div>
+
+                            <p class="stat-label">Certifications</p>
+                        </div>
+
+                    </div>
+            </section>
+
+            <section id="projects">
+                <div class="case">
+                    <p class="case-kicker">Featured projects</p>
+                    <h2>ETF and stock market pipeline</h2>
+                    <p class="case-lead">
+                        Market data collected with Python, landed in Azure Data Lake, modeled with dbt,
+                        and served from Snowflake and SQL Server into Power BI.
+                    </p>
+
+                    <ol class="pipeline" aria-label="Pipeline stages">
+                        <li>
+                            <img src="assets/tech-stack/python.png" alt="">
+                            <span class="step">01</span>
+                            <strong>Collect</strong>
+                            <em>Python, Selenium</em>
+                        </li>
+                        <li>
+                            <img src="assets/tech-stack/azure.png" alt="">
+                            <span class="step">02</span>
+                            <strong>Land</strong>
+                            <em>Azure Data Lake</em>
+                        </li>
+                        <li>
+                            <img src="assets/tech-stack/dbt.png" alt="">
+                            <span class="step">03</span>
+                            <strong>Model</strong>
+                            <em>dbt</em>
+                        </li>
+                        <li>
+                            <img src="assets/tech-stack/snowflake.png" alt="">
+                            <span class="step">04</span>
+                            <strong>Warehouse</strong>
+                            <em>Snowflake, SQL Server</em>
+                        </li>
+                        <li>
+                            <img src="assets/tech-stack/powerbi.png" alt="">
+                            <span class="step">05</span>
+                            <strong>Report</strong>
+                            <em>Power BI</em>
+                        </li>
+                    </ol>
+                    <p class="pipeline-note">GitHub Actions carries the pipeline from ingest through the report.</p>
+
+                    <div class="case-grid">
+                        <div>
+                            <h3>Collect</h3>
+                            <p>Python and Selenium pull stock and ETF data and land the files in Azure Data Lake.</p>
+                        </div>
+                        <div>
+                            <h3>Model</h3>
+                            <p>dbt turns those files into tables in Snowflake, Azure SQL, and SQL Server.</p>
+                        </div>
+                        <div>
+                            <h3>Use</h3>
+                            <p>Power BI sits on the modeled tables so the numbers are readable without opening the warehouse.</p>
+                        </div>
+                    </div>
+
+                    <a class="case-link" href="https://github.com/FNeal10/Etf-Stocks">View the repository <span class="arrow">→</span></a>
+
+                    <div class="also">
+                        <span class="label">Things I am also working on</span>                       
+
+                     
+                    </div>
+                </div>
+                
+            </section>
+
+            <section id="projects2">
+                   <div class="container swiper">
+                            <div class="card-wrapper">
+                                
+                                <ul class="card-list swiper-wrapper">
+
+                                    <li class="card-item swiper-slide">
+                                        <a href="https://github.com/FNeal10/Etf-Stocks" class="card-link">
+                                            <img src="assets/data.jpg" alt="" class="card-image gray-img">
+                                            <h3 class="card-title">END TO END DATA PIPELINE</h3>
+                                            <p class="card-description">
+                                                Automated stock market data ingestion, cloud storage, transformation, and
+                                                analytics using an end-to-end data pipeline.
+                                            </p>
+                                            <div class="card-technologies">
+                                                <span class="tech-pill">Python</span>
+                                                <span class="tech-pill">Selenium</span>
+                                                <span class="tech-pill">Azure ADLS</span>
+                                                <span class="tech-pill">Azure SQL</span>
+                                                <span class="tech-pill">MS SQL</span>
+                                                <span class="tech-pill">Snowflake</span>
+                                                <span class="tech-pill">dbt</span>
+                                                <span class="tech-pill">GitHub Actions</span>
+                                                <span class="tech-pill">CI/CD</span>
+                                                <span class="tech-pill">Power BI</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="card-item swiper-slide">
+                                        <a href="#" class="card-link">
+                                            <img src="assets/warehouse.jpg" alt="" class="card-image gray-img">
+                                            <h3 class="card-title">WAREHOUSE MANAGEMENT SYSTEM</h3>
+                                            <p class="card-description">
+                                                Web-based management system with a user-friendly interface, 
+                                                enabling efficient inventory tracking, order processing, and reporting.
+                                            </p>
+                                            <div class="card-technologies">
+                                                <span class="tech-pill">C#</span>
+                                                <span class="tech-pill">ASP.NET</span>
+                                                <span class="tech-pill">MS SQL</span>
+                                                <span class="tech-pill">Bootstrap</span>
+                                                <span class="tech-pill">HTML</span>
+                                                <span class="tech-pill">CSS</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+
+                                    <li class="card-item swiper-slide">
+                                        <a href="https://github.com/FNeal10/SQL" class="card-link">
+                                            <img src="assets/sql.jpg" alt="" class="card-image gray-img">
+                                            <h3 class="card-title">SQL LEETCODE</h3>
+                                            <p class="card-description">
+                                                A collection of SQL queries and solutions to various problems, 
+                                                showcasing proficiency in database management and data manipulation.
+                                            </p>
+                                            <div class="card-technologies">
+                                                <span class="tech-pill">SQL Queries</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                     <li class="card-item swiper-slide">
+                                        <a href="https://github.com/FNeal10/SQL" class="card-link">
+                                            <img src="assets/sql.jpg" alt="" class="card-image gray-img">
+                                            <h3 class="card-title">SQL LEETCODE</h3>
+                                            <p class="card-description">
+                                                A collection of SQL queries and solutions to various problems, 
+                                                showcasing proficiency in database management and data manipulation.
+                                            </p>
+                                            <div class="card-technologies">
+                                                <span class="tech-pill">SQL Queries</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-slide-button swiper-button-prev"></div>
+                                <div class="swiper-slide-button swiper-button-next"></div>
+
+                            </div>
+                        </div>
+
+                        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+            </section>
+            
+            <section id="tech-stack">
+                <div class="tech-container">
+
+                    <div class="tech-layout">
+                        
+                        <div class="tech-box tech-featured">
+                            <div class="tech-box-header">
+                                <h3>Core Data Engineering</h3>
+                            </div>
+                            <div class="tech-icons">
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/python.png" alt="Python">
+                                    <span>Python</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/azure-sql-db.png" alt="SQL Server">
+                                    <span>SQL</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/azure.png" alt="Microsoft Azure">
+                                    <span>Azure</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/aws.png" alt="Amazon Web Services">
+                                    <span>AWS</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/snowflake.png" alt="Snowflake">
+                                    <span>Snowflake</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/dbt.png" alt="dbt">
+                                    <span>dbt</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/spark.png" alt="dbt">
+                                    <span>PySpark</span>
+                                </div>
+
+                                 <div class="tech-item">
+                                    <img src="assets/tech-stack/apache-airflow.png" alt="Airflow">
+                                    <span>Airflow</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Backend -->
+                        <div class="tech-box">
+                            <h3>Backend Development</h3>
+                            <div class="tech-icons">
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/csharp.png" alt="C#">
+                                    <span>C#</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/asp-net-core.png" alt="ASP.NET">
+                                    <span>ASP.NET</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/fastapi.png" alt="FastAPI">
+                                    <span>FastAPI</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- DevOps -->
+                        <div class="tech-box">
+                            <h3>DevOps & Automation</h3>
+
+                            <div class="tech-icons">
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/git.png" alt="Git">
+                                    <span>Git</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/docker.png" alt="Docker">
+                                    <span>Docker</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/github-light.png" alt="GitHub Actions">
+                                    <span>GitHub</span>
+                                </div>
+                               
+                            </div>
+                        </div>
+
+                        <!-- Analytics -->
+                        <div class="tech-box">
+                            <h3>Analytics & BI</h3>
+                            <div class="tech-icons">
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/powerbi.png" alt="Power BI">
+                                    <span>Power BI</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/ibm.png" alt="IBM Cognos">
+                                    <span>IBM Cognos</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Databases -->
+                        <div class="tech-box">
+                            <h3>Databases</h3>
+                            <div class="tech-icons">
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/microsoft-sql-server.png" alt="MS SQL Server">
+                                    <span>MS SQL</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/oracle.png" alt="Oracle">
+                                    <span>Oracle</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/postgresql.png" alt="PostgreSQL">
+                                    <span>PostgreSQL</span>
+                                </div>
+
+                                <div class="tech-item">
+                                    <img src="assets/tech-stack/mysql.png" alt="MySQL">
+                                    <span>MySQL</span>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+         
+
+        </main>
+
+
+        <!-- Load tsParticles -->
+        <script src="https://cdn.jsdelivr.net/npm/@tsparticles/engine@4/tsparticles.engine.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tsparticles/slim@4/tsparticles.slim.bundle.min.js"></script>
+    
+        <script src="./js/scripts.js"></script>
+        <script src="./js/scripts.js"></script>
+        <script src="./js/particles.js"></script>
+
+    </body>
+</html>
