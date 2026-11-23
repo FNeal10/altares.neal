@@ -88,7 +88,7 @@
 
     color: #1f2937;
     text-align: center;
-
+    text-transform: uppercase;
     margin: 15px 12px 10px;
     overflow-wrap: break-word;
 }
